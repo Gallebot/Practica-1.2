@@ -52,7 +52,6 @@ const jugoPedido = "Energizer";
 const tiempoMezcla = timeToMixJuice(jugoPedido);
 console.log(`El jugo "${jugoPedido}" tarda ${tiempoMezcla} minutos en mezclarse.`);
 
-//Función Limas
 
 //Funcion de limas por cortar
 function limasPorCortar(limasNecesarias, suministroLimas) {
