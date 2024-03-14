@@ -120,4 +120,3 @@ const pedidosNoPreparados = pedidosRestantes(minutosRestantes, pedidosPendientes
 
 console.log("Los pedidos que Li Mei no puede empezar a preparar antes del final de su turno:");
 console.log(pedidosNoPreparados);
-
