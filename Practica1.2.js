@@ -51,3 +51,35 @@ function timeToMixJuice(jugo){
 const jugoPedido = "Energizer";
 const tiempoMezcla = timeToMixJuice(jugoPedido);
 console.log(`El jugo "${jugoPedido}" tarda ${tiempoMezcla} minutos en mezclarse.`);
+
+//Función Limas
+
+//Funcion de limas por cortar
+function limasPorCortar(limasNecesarias, suministroLimas) {
+    const tiposGajo = {
+        "little": 6,
+        "mediana": 8,
+        "grande": 10
+    };
+
+    let limasCortadas = 0;
+    let limasRequqeridas = limasNeed;
+    for (const lima of suministroLimas) {
+        limasCortadas += tiposGajo[lima];
+        if (limasCortadas >= limasNecesarias) {
+            break;
+        }
+    }
+
+// Se calcula cuántas limas completas son necesarias
+const limasCompletas = Math.floor(limasNecesarias / 10);
+
+// Se devuelve la cantidad total de limas (completas + las que quedan)
+return limasCompletas + Math.ceil((limasNecesarias % 10) / 10);
+}
+
+
+const limasNeed = 150;
+const suministroLimas = ["little", "little", "little", "little", "mediana"];
+const limasACortar = limasPorCortar(limasNeed, suministroLimas);
+console.log(`Li Mei necesita cortar ${limasACortar} limas.`);
